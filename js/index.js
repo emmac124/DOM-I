@@ -43,7 +43,7 @@ const logo = document.querySelector("#logo-img");
 logo.setAttribute('src', 'img/logo.png');
 
 const headerNav = document.querySelector('nav a');
-const nav1 = headerNav.nextElementSibling;
+const nav1 = headerNav;
 const nav2 = nav1.nextElementSibling;
 const nav3 = nav2.nextElementSibling;
 const nav4 = nav3.nextElementSibling;
@@ -58,18 +58,14 @@ nav5.textContent = 'About';
 nav6.textContent = 'Contact';
 
 
-const firstSection = document.querySelector('.cta');
-const textAndButton = firstSection.querySelector('.cta-text');
-const largeText = textAndButton.querySelector('h1');
-const firstButton = textAndButton.querySelector('button');
+const firstSection = document.querySelector('.cta-text');
+const largeText = firstSection.querySelector('h1');
+const firstButton = firstSection.querySelector('button');
+const mainImg = document.querySelector('#cta-img');
 largeText.textContent = "DOM IS AWESOME";
 firstButton.textContent = 'Get Started';
-console.log(textAndButton);
+mainImg.setAttribute('src', '../img/header-img.png');
 
 
-// const firstSection = document.querySelector('.cta-text');
-// const largeText = firstSection.querySelector('h1');
-// const firstButton = firstSection.querySelector('button');
-// largeText.textContent = 'DOM IS AWESOME';
-// firstButton.textContent = 'Get Started';
+
 
