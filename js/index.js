@@ -38,5 +38,38 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const logo = document.querySelector("#logo-img");
+logo.setAttribute('src', 'img/logo.png');
+
+const headerNav = document.querySelector('nav a');
+const nav1 = headerNav.nextElementSibling;
+const nav2 = nav1.nextElementSibling;
+const nav3 = nav2.nextElementSibling;
+const nav4 = nav3.nextElementSibling;
+const nav5 = nav4.nextElementSibling;
+const nav6 = nav5.nextElementSibling;
+
+nav1.textContent = 'Services';
+nav2.textContent = 'Product';
+nav3.textContent = 'Vision';
+nav4.textContent = 'Features';
+nav5.textContent = 'About';
+nav6.textContent = 'Contact';
+
+
+const firstSection = document.querySelector('.cta');
+const textAndButton = firstSection.querySelector('.cta-text');
+const largeText = textAndButton.querySelector('h1');
+const firstButton = textAndButton.querySelector('button');
+largeText.textContent = "DOM IS AWESOME";
+firstButton.textContent = 'Get Started';
+console.log(textAndButton);
+
+
+// const firstSection = document.querySelector('.cta-text');
+// const largeText = firstSection.querySelector('h1');
+// const firstButton = firstSection.querySelector('button');
+// largeText.textContent = 'DOM IS AWESOME';
+// firstButton.textContent = 'Get Started';
+
